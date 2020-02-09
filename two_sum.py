@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
         for index, item in enumerate(nums):
             for i in nums[index+1::]:
                 res = item + i

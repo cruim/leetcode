@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longest_common_prefix(self, strs: List[str]) -> str:
         if not len(strs):
             return ''
         min_word = min(strs, key=len)
@@ -18,7 +18,3 @@ class Solution:
                 return min_word
             else:
                 min_len -= 1
-        return ''
-
-test = Solution()
-print(test.longestCommonPrefix([]))
